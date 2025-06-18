@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Amazon Logo">
+        </div>
+
+        <div class="location">
+            <p>Deliver to</p>
+            <h4>Pakistan</h4>
+        </div>
+
+        <div class="search-container">
+            <select class="search-dropdown">
+                <option>All</option>
+                <option>Electronics</option>
+                <option>Books</option>
+                <option>Fashion</option>
+            </select>
+            <input type="text" class="search-bar" placeholder="Search Amazon">
+            <button class="search-btn">🔍</button>
+        </div>
+
+        <div class="language">
+            <img src="flag.png" alt="US Flag">
+            <span>EN ▼</span>
+        </div>
+
+        <div class="account">
+            <p>Hello, sign in</p>
+            <h4>Account & Lists▼</h4>
+        </div>
+
+        <div class="returns">
+            <p>Returns</p>
+            <h4>& Orders</h4>
+        </div>
+
+        <div class="cart">
+            🛒<span id="cart-count">0</span>
+            <h4>Cart</h4>
+        </div>
+
+        <button class="toggle-mode">Light/Dark Mode</button>
+    </nav>
+
+    <div class="nav-options">
+        <span>≣ All</span>
+        <span>Today's Deals</span>
+        <span>Customer Service</span>
+        <span>Registry</span>
+        <span>Gift Cards</span>
+        <span>Sell</span>
+    </div>
+
+    <section class="product-container">
+       
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+
+        
+        <div class="product-card" id="pc1">
+            <img src="pc.jpg" alt="Gaming PC">
+            <h3>Gaming PC</h3>
+            <p>⭐ 4.5 (120 reviews)</p>
+            <button class="add-to-cart" onclick="addToCart('pc1')">Add to Cart</button>
+            <button class="remove-from-cart" onclick="removeFromCart('pc1')" disabled>Remove</button>
+        </div>
+        
+        <div class="product-card" id="pc2">
+            <img src="headset.jpg" alt="Gaming Headset">
+            <h3>Gaming Headset</h3>
+            <p>⭐ 4.2 (95 reviews)</p>
+            <button class="add-to-cart" onclick="addToCart('pc2')">Add to Cart</button>
+            <button class="remove-from-cart" onclick="removeFromCart('pc2')" disabled>Remove</button>
+        </div>
+
+        <div class="product-card" id="pc3">
+            <img src="keyboard.jpeg" alt="Keyboard">
+            <h3>Mechanical Keyboard</h3>
+            <p>⭐ 4.8 (200 reviews)</p>
+            <button class="add-to-cart" onclick="addToCart('pc3')">Add to Cart</button>
+            <button class="remove-from-cart" onclick="removeFromCart('pc3')" disabled>Remove</button>
+        </div>
+
+        <div class="product-card" id="pc4">
+            <img src="mouse.jpg" alt="Gaming Mouse">
+            <h3>Gaming Mouse</h3>
+            <p>⭐ 4.7 (150 reviews)</p>
+            <button class="add-to-cart" onclick="addToCart('pc4')">Add to Cart</button>
+            <button class="remove-from-cart" onclick="removeFromCart('pc4')" disabled>Remove</button>
+        </div>
+
+        <div class="product-card" id="pc5">
+            <img src="monitor.jpeg" alt="Monitor">
+            <h3>Gaming Monitor</h3>
+            <p>⭐ 4.6 (180 reviews)</p>
+            <button class="add-to-cart" onclick="addToCart('pc5')">Add to Cart</button>
+            <button class="remove-from-cart" onclick="removeFromCart('pc5')" disabled>Remove</button>
+        </div>
+
+        <div class="product-card" id="pc6">
+            <img src="chair.jpeg" alt="Gaming Chair">
+            <h3>Gaming Chair</h3>
+            <p>⭐ 4.4 (90 reviews)</p>
+            <button class="add-to-cart" onclick="addToCart('pc6')">Add to Cart</button>
+            <button class="remove-from-cart" onclick="removeFromCart('pc6')" disabled>Remove</button>
+        </div>
+
+        <div class="product-card" id="pc7">
+            <img src="controller.webp" alt="Gaming Controller">
+            <h3>Gaming Controller</h3>
+            <p>⭐ 4.3 (80 reviews)</p>
+            <button class="add-to-cart" onclick="addToCart('pc7')">Add to Cart</button>
+            <button class="remove-from-cart" onclick="removeFromCart('pc7')" disabled>Remove</button>
+        </div>
+
+        <div class="product-card" id="pc8">
+            <img src="desk.jpeg" alt="Gaming Desk">
+            <h3>Gaming Desk</h3>
+            <p>⭐ 4.1 (70 reviews)</p>
+            <button class="add-to-cart" onclick="addToCart('pc8')">Add to Cart</button>
+            <button class="remove-from-cart" onclick="removeFromCart('pc8')" disabled>Remove</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
