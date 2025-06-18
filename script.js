@@ -34,9 +34,9 @@ function removeFromCart(productId) {
 
 let slideIndex = 0;
 const slides = [
-    'slide1.jpg',
-    'slide2.jpg',
-    'slide3.jpg'
+    './images/slide1.jpg',
+    './images/slide2.jpg',
+    './images/slide3.jpg'
 ];
 
 function showSlides() {
