@@ -1,5 +1,7 @@
 # Amazon-Clone
 Amazon Clone using HTML,CSS and Javascript
+
+# Requirements
 ## 1. HTML:
 - Navbar: Must include elements like logo, search bar, cart and ‘light/dark mode’ toggle Button.
 - Main Content: Cards displaying details of products like name, image, rating with ‘Add to Cart’ Button.
